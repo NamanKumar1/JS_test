@@ -24,12 +24,21 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="container1" onmouseover="colour()">
         <h1>Please Enter Your Name</h1>
-        <input type="text" style="display: block ; float: center; width: 250px; margin-left: 295px; margin-bottom: 25px;">
+        <input type="text" id="input1" style="display: block ; float: center; width: 250px; margin-left: 295px; margin-bottom: 25px;" onkeydown="keydownevent()">
         <button onclick="alert('Your name is saved')">Save</button>
     </div>
+    <script>
+        function colour() {
+            document.getElementById(container1).style.background = "green";
+        }
 
+        function keydownevent() {
+            document.getElementById("input1");
+            alert("Pressed a key");
+        }
+    </script>
 </body>
 
 </html>
